@@ -1,6 +1,6 @@
 # Twilight Challenge
 
-Webbplats för kappseglingen **Twilight Challenge** – 80 NM nattsegling i Öresund med start och mål i Lomma (lördag 30 maj 2026, start 15:00). Innehåller tävlingsinfo, banbeskrivning, Notice of race och anmälan.
+Webbplats för kappseglingen **Twilight Challenge** – 80 NM nattsegling i Öresund med start och mål i Lomma (lördag 30 maj 2026, start 15:00). Innehåller tävlingsinfo, banbeskrivning, Seglingsföreskrifter och anmälan.
 
 Statisk webbplats (HTML, CSS, JS). Ingen build-steg.
 
