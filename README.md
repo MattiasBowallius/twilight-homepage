@@ -1,6 +1,8 @@
-# Twilight Homepage
+# Twilight Challenge
 
-A static website. No build step—just HTML, CSS, and JS.
+Webbplats för kappseglingen **Twilight Challenge** – 80 NM nattsegling i Öresund med start och mål i Lomma (lördag 30 maj 2026, start 15:00). Innehåller tävlingsinfo, banbeskrivning, Notice of race och anmälan.
+
+Statisk webbplats (HTML, CSS, JS). Ingen build-steg.
 
 ## Local development
 
@@ -15,6 +17,17 @@ npx serve .
 ```
 
 Then visit http://localhost:8000
+
+## Sign-up form
+
+The race sign-up form is set up to work with [Formspree](https://formspree.io/) (free tier: 50 submissions/month). To enable it:
+
+1. Sign up at [formspree.io](https://formspree.io/) and create a new form.
+2. Copy your form ID (e.g. `xjvglkqa` from `https://formspree.io/f/xjvglkqa`).
+3. In `index.html`, find the sign-up form and replace `YOUR_FORM_ID` in the `action` attribute with your form ID:
+   `action="https://formspree.io/f/YOUR_FORM_ID"`
+
+Submissions will be sent to your Formspree email. You can also use another form backend (e.g. Netlify Forms, Google Forms) by changing the form `action` and field `name` attributes.
 
 ## Deploy (cheapest options)
 

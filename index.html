@@ -1,16 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twilight</title>
+  <title>Twilight Challenge – 80 NM nattsegling i Öresund</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="nav-logo">Twilight Challenge</a>
+      <ul class="nav-links">
+        <li><a href="#race-info">Tävlingsinfo</a></li>
+        <li><a href="#course">Bana</a></li>
+        <li><a href="#notice-of-race">Notice of race</a></li>
+        <li><a href="#sign-up">Anmäl dig</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Meny"><span class="nav-toggle-line" aria-hidden="true"></span></button>
+    </nav>
+  </header>
+
   <main>
-    <h1>Twilight</h1>
-    <p>Welcome.</p>
+    <section class="hero">
+      <h1 class="hero-title">Twilight Challenge</h1>
+      <p class="hero-tagline">Inget mätbrev. Inga krångliga regler. Bara du, din båt och havet.</p>
+      <a href="#sign-up" class="btn btn-primary">Anmäl dig till tävlingen</a>
+    </section>
+
+    <section id="race-info" class="section race-info">
+      <h2>Tävlingsinfo</h2>
+      <p class="section-intro">80 NM nattsegling i Öresund med start och mål i Lomma. En återkommande, fast bana – en tydlig referenspunkt för dig som vill mäta dig mot dig själv och andra, år efter år.</p>
+      <div class="race-info-grid">
+        <div class="info-card">
+          <span class="info-label">Datum</span>
+          <p class="info-value">Lördag 30 maj 2026</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Start</span>
+          <p class="info-value">15:00</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Start & mål</span>
+          <p class="info-value">Lomma</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Sträcka</span>
+          <p class="info-value">80 NM</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Pilotår</span>
+          <p class="info-value">12 båtar</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Startavgift</span>
+          <p class="info-value">ca 1 290 kr/båt</p>
+          <span class="info-sublabel">(2 personer, inkl. korv & dryck i mål + Finisher-T-shirt)</span>
+        </div>
+      </div>
+      <div class="race-extra">
+        <p><strong>Startinramning:</strong> Kanonskott från piren i samarbete med Lomma Event.</p>
+        <p><strong>Socialt:</strong> Gemensam pizzabuffé före start och enkel servering vid målgång.</p>
+      </div>
+    </section>
+
+    <section id="course" class="section course-map-section">
+      <h2>Bana</h2>
+      <p class="section-intro">Twilight Challenge seglas på en fast rutt om 80 NM genom Öresund med 21 waypoints. Start och mål i Lomma bukt; banan går via Malmö/Vellinge, över till danska sidan, runt Saltholm och norrut mot Glumslöv/Niva innan den leder tillbaka till Lomma. Waypoints och koordinater tillhandahålls i GPX-format. Detaljerad karta och regelverk finns i <a href="#notice-of-race">Notice of race</a>.</p>
+
+      <div class="course-stylized-wrap">
+        <p class="course-stylized-label">Styliserad banöversikt</p>
+        <figure class="course-map-stylized">
+          <img src="assets/course-stylized.png" alt="Twilight Challenge – styliserad karta över 80 NM-banan i Öresund med waypoint 1–21 och Saltholm" class="course-stylized-img">
+          <figcaption class="course-stylized-caption">Banan med 20 waypoints + waypoint 21. Lomma (1–3) → söderut → danska sidan → Saltholm → norrut → tillbaka. 80 NM.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="notice-of-race" class="section notice-of-race">
+      <h2>Notice of race</h2>
+      <p class="section-intro">Officiella tävlingsregler, banbeskrivning och seglingsanvisningar. Diagrammet visar banan med markeringar och etapper. Exakta waypoints och koordinater tillhandahålls i GPX-format.</p>
+
+      <div class="nor-content">
+        <h3>Regelverk och säkerhet</h3>
+        <ul class="nor-list">
+          <li><strong>COLREGS</strong> tillämpas strikt, särskilt avseende lanternor och TSS. Brister innebär omedelbar utgång.</li>
+          <li><strong>Inget handikappsystem</strong> (SRS/ORC) – principiellt val för enkel administration och lågt insteg.</li>
+          <li><strong>Go / No-Go:</strong> Beslut 2 veckor före start baserat på deltagarantal och ekonomiska åtaganden.</li>
+        </ul>
+
+        <h3>Organisation</h3>
+        <p>Tävlingen följer SSF:s modell med tre funktionärer: seglingsledare (land), banchef (sjö) och logistik- och eventkoordinator. Roller och rutiner är dokumenterade för intern backup.</p>
+
+        <p class="nor-doc-note">Fullständig Notice of race (PDF) publiceras här när den är fastställd.</p>
+      </div>
+    </section>
+
+    <section id="sign-up" class="section sign-up-section">
+      <h2>Anmäl dig till tävlingen</h2>
+      <p class="section-intro">Anmäl ditt båtlag via formuläret nedan. Du får bekräftelse och vidare instruktioner på e-post. Pilotåret är dimensionerat för 12 båtar.</p>
+
+      <form class="sign-up-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="Twilight Challenge – Ny anmälan">
+        <div class="form-row">
+          <label for="skipper">Skippare / Rorsman <span class="required">*</span></label>
+          <input type="text" id="skipper" name="skipper" required placeholder="För- och efternamn">
+        </div>
+        <div class="form-row">
+          <label for="email">E-post <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="du@example.com">
+        </div>
+        <div class="form-row">
+          <label for="boat">Båtnamn</label>
+          <input type="text" id="boat" name="boat" placeholder="Båtens namn">
+        </div>
+        <div class="form-row">
+          <label for="crew">Besättning (antal eller namn)</label>
+          <input type="text" id="crew" name="crew" placeholder="T.ex. 1 (singlehanded) eller namn">
+        </div>
+        <div class="form-row form-actions">
+          <button type="submit" class="btn btn-primary">Skicka anmälan</button>
+        </div>
+      </form>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Twilight Challenge – 80 NM nattsegling i Öresund. Lomma. Detaljer enligt Notice of race och seglingsanvisningarna.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
