@@ -128,7 +128,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 3rem 1.5rem;
-  background: linear-gradient(180deg, var(--bg-dark) 0%, var(--water) 50%, var(--bg-dark) 100%);
+  background: var(--bg-dark) url("assets/oresund-night-sailing.png") center / cover no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -137,8 +137,13 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(233, 69, 96, 0.08) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.5) 50%, rgba(15, 23, 42, 0.85) 100%);
   pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
@@ -146,7 +151,6 @@ body {
   font-weight: 700;
   margin: 0 0 0.5rem;
   letter-spacing: 0.03em;
-  position: relative;
 }
 
 .hero-tagline {
